@@ -1,0 +1,94 @@
+#/--------------------\
+# Constants
+# - site configuration
+# - reset link targets
+# - set default header
+# - styles
+#\--------------------/
+
+
+#/--------------------\
+# Site configuration
+#\--------------------/
+site_package {
+
+  websiteName =
+  homePid = 1
+
+  logo = EXT:sitepackage/Resources/Public/Images/logo.png
+
+  # baseUrls
+  liveBaseUrl = http://www.pixel-ink.de/
+  stageBaseUrl = http://stage.pixel-ink.de/
+  developmentBaseUrl = http://pixel-ink.ddev.local/
+
+  footerMenuPid = 9
+
+  # Set language key e.g. for html tag
+  langKey = de
+  locale = de_DE
+
+  author = Pixel Ink
+
+  # cat=T3 Premium/file/070; type=string; label= Favicon: The Favicon of the website
+  favicon = EXT:sitepackage/Resources/Public/Icons/favicon.ico
+
+  # Path to locallang.xlf
+  path.l10n = EXT:sitepackage/Resources/Private/Language/locallang.xlf
+
+  # Social media
+  facebookLink = https://www.facebook.com/
+  googleplusLink= https://plus.google.com/
+  instagramLink = https://www.instagram.com/
+  linkedinLink = https://www.linkedin.com/
+  twitterLink = https://www.twitter.com/
+  youtubeLink = https://www.youtube.com/
+
+}
+
+#/--------------------\
+# Reset Link targets
+#\--------------------/
+
+PAGE_TARGET =
+content.pageFrameObj =
+
+#/--------------------\
+# Set default header
+#\--------------------/
+content.defaultHeaderType = 2
+
+
+#/--------------------\
+# Styles
+#\--------------------/
+styles {
+  content {
+
+    textmedia {
+      # Image max width in text
+      maxWInText = 600
+      # Image max width in lightbox
+      linkWrap.width = 900
+      # Image max width
+      maxW = 700
+
+      # Border thick
+      borderThick = 1
+
+      # Lightbox class for images
+      linkWrap {
+        lightboxEnabled = 1
+      }
+
+      # Defined in Sass/Vendor/_typo3-frontend.scss
+      columnSpacing = 30
+
+      # Defined in Sass/Vendor/_typo3-frontend.scss
+      rowSpacing = 30
+
+      # Defined in Sass/Vendor/_typo3-frontend.scss
+      textMargin = 30
+    }
+  }
+}

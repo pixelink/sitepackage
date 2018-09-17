@@ -1,0 +1,15 @@
+lib.logo = IMAGE
+lib.logo {
+  file = {$site_package.logo}
+  altText = {$site_package.websiteName}
+  width = 50
+
+  stdWrap {
+    typolink {
+      parameter = {$site_package.homePid}
+      ATagParams = rel="home" class="img-fluid"
+      title.cObject = TEXT
+      title.cObject.data = LLL:{$site_package.path.l10n}:header.home
+    }
+  }
+}

@@ -1,0 +1,2 @@
+# Workaround for custom table classes - add new class class="contenttable contenttable--borderless"
+lib.parseFunc_RTE.externalBlocks.table.stdWrap.HTMLparser.tags.table.fixAttrib.class.list := addToList(contenttable, contenttable--borderless)

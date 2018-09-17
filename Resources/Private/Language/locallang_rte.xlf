@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-02-01T10:57:57Z"
+		  product-name="t3p_core">
+		<header/>
+		<body>
+
+			<trans-unit id="class.text-left">
+				<source>Text: Left</source>
+			</trans-unit>
+			<trans-unit id="class.text-right">
+				<source>Text: Right</source>
+			</trans-unit>
+			<trans-unit id="class.text-center">
+				<source>Text: Center</source>
+			</trans-unit>
+			<trans-unit id="class.text-justify">
+				<source>Text: Justify</source>
+			</trans-unit>
+
+			<trans-unit id="class.paragraph-lead">
+				<source>Text: Lead</source>
+			</trans-unit>
+			<trans-unit id="class.paragraph-small">
+				<source>Text: Small</source>
+			</trans-unit>
+
+			<trans-unit id="class.span-email">
+				<source>Span: E-Mail</source>
+			</trans-unit>
+			<trans-unit id="class.span-email">
+				<source>Span: E-Mail</source>
+			</trans-unit>
+			<trans-unit id="class.span-phone">
+				<source>Span: Phone</source>
+			</trans-unit>
+			<trans-unit id="class.span-skype">
+				<source>Span: Skype</source>
+			</trans-unit>
+
+			<trans-unit id="class.anchor-internal">
+				<source>Link: Internal</source>
+			</trans-unit>
+			<trans-unit id="class.anchor-download">
+				<source>Link: Download</source>
+			</trans-unit>
+			<trans-unit id="class.anchor-pdf">
+				<source>Link: PDF</source>
+			</trans-unit>
+			<trans-unit id="class.anchor-email">
+				<source>Link: E-Mail</source>
+			</trans-unit>
+			<trans-unit id="class.anchor-button">
+				<source>Link: Button</source>
+			</trans-unit>
+			<trans-unit id="class.anchor-button-secondary">
+				<source>Link: Button Secondary</source>
+			</trans-unit>
+
+			<trans-unit id="class.list-no-bullet">
+				<source>List: No bullet</source>
+			</trans-unit>
+			<trans-unit id="class.list-no-bullet">
+				<source>List: No bullet</source>
+			</trans-unit>
+			<trans-unit id="class.list-square">
+				<source>List: Square</source>
+			</trans-unit>
+			<trans-unit id="class.list-features">
+				<source>List: Features</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

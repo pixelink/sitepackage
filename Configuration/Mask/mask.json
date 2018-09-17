@@ -1,0 +1,41 @@
+{
+    "tt_content": {
+        "elements": {
+            "imageseparator": {
+                "label": "Parallax Image Separator",
+                "key": "imageseparator",
+                "shortLabel": "Parallax Image Separator",
+                "description": "",
+                "icon": "fa-picture-o",
+                "color": "#797979",
+                "columns": [
+                    "image"
+                ],
+                "labels": [
+                    "Bild"
+                ]
+            },
+            "teaserimage": {
+                "label": "Teaser image",
+                "key": "teaserimage",
+                "shortLabel": "Teaser image",
+                "description": "Image with headline and text",
+                "icon": "fa-file-image-o",
+                "color": "#00fa92",
+                "columns": [
+                    "image",
+                    "header",
+                    "bodytext"
+                ],
+                "labels": [
+                    "Bild",
+                    "Header",
+                    "Text"
+                ],
+                "options": {
+                    "2": "rte"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+
+lib.socialMediaMenu = COA
+lib.socialMediaMenu {
+
+    10 = TEXT
+    10 {
+        value (
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                        </ul>
+        )
+    }
+
+    wrap = <ul class="socials"> | </li>
+
+}

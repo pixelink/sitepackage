@@ -1,0 +1,23 @@
+{
+	"name": "pixelink/sitepackage",
+	"type": "typo3-cms-extension",
+	"version": "1.0.1",
+	"description": "Sitepack Skeletton",
+	"homepage": "https://www.pixel-ink.de",
+	"keywords": ["TYPO3 Boilerplate", "Sitepackage", "Skeletton", "Pixel Ink", "TYPO3"],
+	"author": [
+		{
+			"name": "Benjamin Riezler",
+			"role": "Developer",
+			"homepage": "https://www.pixel-ink.de"
+		}
+	],
+	"require": {
+		"typo3/cms-core": "^8.7"
+	},
+	"autoload": {
+		"psr-4": {
+			"Pixelink\\Sitepackage\\": "Classes"
+		}
+	}
+}

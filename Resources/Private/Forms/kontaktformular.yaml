@@ -1,0 +1,92 @@
+
+renderingOptions:
+  submitButtonLabel: 'Anfrage senden'
+type: Form
+identifier: kontaktformular
+label: Kontaktformular
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: Kontaktanfrage
+      recipientAddress: re@cipient
+      recipientName: 'Recipient Name'
+      senderAddress: '{text-6}'
+      senderName: '{text-2}'
+      replyToAddress: '{text-6}'
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: 'true'
+      translation:
+        language: ''
+    identifier: EmailToReceiver
+  -
+    options:
+      pageUid: '23'
+      additionalParameters: ''
+    identifier: Redirect
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'previous Page'
+      nextButtonLabel: 'next Page'
+    type: Page
+    identifier: page-1
+    label: ''
+    renderables:
+      -
+        type: Fieldset
+        identifier: fieldset-1
+        label: Fieldset
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-1
+            label: Land
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: 'Land *'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-2
+            label: Name
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: 'Name *'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-6
+            label: E-Mail-Adresse
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: 'E-Mail-Adresse *'
+            validators:
+              -
+                identifier: NotEmpty
+              -
+                identifier: EmailAddress
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: 'Ihre Nachricht'
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'Ihre Nachricht *'
+        validators:
+          -
+            identifier: NotEmpty

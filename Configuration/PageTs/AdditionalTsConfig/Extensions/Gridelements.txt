@@ -1,0 +1,182 @@
+#/-----------------------------------\
+# Gridelements
+# - 50-50 Cols
+# - 33-33-33 Cols
+# - 33-66 Cols
+# - 66-33 Cols
+#\-----------------------------------/
+
+#/-----------------------------------\
+# Gridelements
+#\-----------------------------------/
+
+tx_gridelements {
+    # If this option is set the record configuration overrides the TSconfig.
+    # overruleRecords = 1
+
+    setup {
+        #/-----------------------------------\
+        # 50-50 Grid
+        #\-----------------------------------/
+        1 {
+            title = 50-50 Grid
+            description = 2 Spalten
+            icon = EXT:sitepackage/Resources/Public/Images/GridElements/gridelement-50-50.png
+            config {
+                colCount = 2
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Linke Spalte
+                                colPos = 0
+                            }
+
+                            2 {
+                                name = Rechte Spalte
+                                colPos = 1
+                            }
+                        }
+                    }
+                }
+            }
+
+            #flexformDS = FILE:EXT:sitepackage/Configuration/FlexForms/Gridelements/Grid-50-50.xml
+        }
+
+        #/-----------------------------------\
+        # 33-33-33 Grid
+        #\-----------------------------------/
+        2 {
+            title = 33-33-33 Grid
+            description = 3 Spalten
+            icon = EXT:sitepackage/Resources/Public/Images/GridElements/gridelement-33-33-33.png
+            config {
+                colCount = 3
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Linke Spalte
+                                colPos = 0
+                            }
+
+                            2 {
+                                name = Mittlere Spalte
+                                colPos = 2
+                            }
+
+                            3 {
+                                name = Rechte Spalte
+                                colPos = 1
+                            }
+                        }
+                    }
+                }
+            }
+
+            #flexformDS = FILE:EXT:sitepackage/Configuration/FlexForms/Gridelements/Grid-33-33-33.xml
+        }
+
+        #/-----------------------------------\
+        # 33-66 Grid
+        #\-----------------------------------/
+        3 {
+            title = 1/3 - 2/3 Grid
+            description = 2 Spalten
+            icon = EXT:sitepackage/Resources/Public/Images/GridElements/gridelement-33-66.png
+            config {
+                colCount = 2
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Linke Spalte
+                                colPos = 0
+                            }
+
+                            2 {
+                                name = Rechte Spalte
+                                colPos = 1
+                            }
+                        }
+                    }
+                }
+            }
+
+            #flexformDS = FILE:EXT:sitepackage/Configuration/FlexForms/Gridelements/Grid-33-66.xml
+        }
+
+        #/-----------------------------------\
+        # 66-33 Grid
+        #\-----------------------------------/
+        4 {
+            title = 2/3 - 1/3 Grid
+            description = 2 Spalten
+            icon = EXT:sitepackage/Resources/Public/Images/GridElements/gridelement-66-33.png
+            config {
+                colCount = 2
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Linke Spalte
+                                colPos = 0
+                            }
+
+                            2 {
+                                name = Rechte Spalte
+                                colPos = 1
+                            }
+                        }
+                    }
+                }
+            }
+
+            #flexformDS = FILE:EXT:sitepackage/Configuration/FlexForms/Gridelements/Grid-66-33.xml
+        }
+        #/-----------------------------------\
+        # 25-25-25-25 Grid
+        #\-----------------------------------/
+        5 {
+            title = 4/4 Grid
+            description = 4 Spalten
+            icon = EXT:sitepackage/Resources/Public/Images/GridElements/gridelement-25-25-25-25.png
+            config {
+                colCount = 4
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Spalte 1
+                                colPos = 0
+                            }
+
+                            2 {
+                                name = Spalte 2
+                                colPos = 1
+                            }
+
+                            3 {
+                                name = Spalte 3
+                                colPos = 2
+                            }
+
+                            4 {
+                                name = Spalte 4
+                                colPos = 3
+                            }
+                        }
+                    }
+                }
+            }
+
+            #flexformDS = FILE:EXT:sitepackage/Configuration/FlexForms/Gridelements/Grid-66-33.xml
+        }
+    }
+}

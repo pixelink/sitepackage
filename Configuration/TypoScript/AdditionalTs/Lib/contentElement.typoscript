@@ -1,0 +1,25 @@
+#/-----------------------------------\
+  # - Custom Content Paths FSC
+  # - W3C valid lightbox
+#\-----------------------------------/
+
+#/-----------------------------------\
+# Custom Content Paths
+#\-----------------------------------/
+
+lib.contentElement {
+  templateRootPaths {
+    0 = EXT:fluid_styled_content/Resources/Private/Templates/
+    10 = EXT:sitepackage/Resources/Private/Templates/FSC/
+  }
+
+  partialRootPaths {
+    0 = EXT:fluid_styled_content/Resources/Private/Partials/
+    10 = EXT:sitepackage/Resources/Private/Partials/FSC/
+  }
+
+  layoutRootPaths {
+    0 = EXT:fluid_styled_content/Resources/Private/Layouts/
+    10 = EXT:sitepackage/Resources/Private/Layouts/FSC/
+  }
+}

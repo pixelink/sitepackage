@@ -1,0 +1,20 @@
+lib.mainMenu = HMENU
+lib.mainMenu {
+  entryLevel = 0
+  1 = TMENU
+  1 {
+    expAll = 1
+    wrap = <ul> | </ul>
+    noBlur = 1
+    NO = 1
+    NO {
+      ATagBeforeWrap = 1
+      linkWrap = <span>|</span>
+      wrapItemAndSub = <li>|</li>
+      stdWrap.cObject = TEXT
+      stdWrap.cObject.field = nav_title//title
+      stdWrap.htmlSpecialChars = 1
+    }
+  }
+
+}

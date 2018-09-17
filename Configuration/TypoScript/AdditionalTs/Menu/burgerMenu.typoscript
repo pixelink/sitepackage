@@ -1,0 +1,13 @@
+lib.hamburgerMenu = COA
+lib.hamburgerMenu {
+  10 = TEXT
+  10 {
+    data = LLL:{$site_package.path.l10n}:header.menu
+    wrap = <span class="mobile-menu__text"> | </span>
+  }
+
+  20 = TEXT
+  20.value = <div class="mobile-menu__inner"><span class="mobile-menu__dash"></span><span class="mobile-menu__dash"></span><span class="mobile-menu__dash"></span><span class="mobile-menu__dash"></span></div>
+
+  wrap = <div class="mobile-menu"> | </div>
+}

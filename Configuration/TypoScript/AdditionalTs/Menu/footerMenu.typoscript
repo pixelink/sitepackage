@@ -1,0 +1,27 @@
+lib.footerMenu = COA
+lib.footerMenu {
+  wrap = <nav class="footer-nav"> | </nav>
+
+  10 = TEXT
+  10 {
+    wrap = <h4 class="footer-title"> | </h4>
+    data = LLL:{$site_package.path.l10n}:footer.quick_links
+  }
+
+  20 = HMENU
+  20 {
+    wrap = <ul class="list-unstyled"> | </ul>
+
+    special = directory
+    special.value = {$site_package.footerMenuPid}
+
+    1 = TMENU
+    1 {
+      noBlur = 1
+      NO = 1
+      NO {
+        linkWrap = <li> | </li>
+      }
+    }
+  }
+}

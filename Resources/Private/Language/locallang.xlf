@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-02-01T10:57:57Z"
+		  product-name="t3p_core">
+		<header/>
+		<body>
+			<trans-unit id="header.home" xml:space="preserve">
+				<source>Go to home</source>
+			</trans-unit>
+			<trans-unit id="user.register">
+				<source>Login / Register</source>
+			</trans-unit>
+			<trans-unit id="footer.quicklinks">
+				<source>copyright 2018 - Movade GmbH </source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

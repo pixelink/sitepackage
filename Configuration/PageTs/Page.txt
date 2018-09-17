@@ -1,0 +1,12 @@
+#/-----------------------------------\
+# Import Basic Settings
+#\-----------------------------------/
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage/Configuration/PageTs/AdditionalTsConfig/BackendLayouts.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage/Configuration/PageTs/TCEFORM.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage/Configuration/PageTs/TCEMAIN.txt">
+
+#/-----------------------------------\
+# Extensions
+#\-----------------------------------/
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage/Configuration/PageTs/AdditionalTsConfig/Extensions/Gridelements.txt">

@@ -1,0 +1,110 @@
+#/-----------------------------------\
+# - Page
+# - Metadata
+# - CSS
+# - JS
+# - Header Data
+# - Fluidtemplate
+# - Template switch
+# - Get contents Col 0 - 4
+#\-----------------------------------/
+
+page = PAGE
+page {
+  typeNum = 0
+
+  #/-----------------------------------\
+  # Metadata
+  #\-----------------------------------/
+
+  meta {
+    keywords.data = levelfield : -1 , keywords, slide
+    description.data = levelfield : -1 , description, slide
+    robots = index, follow
+    author = {$site_package.author}
+    X-UA-Compatible = IE=edge
+    MSSmartTagsPreventParsing = true
+  }
+
+  # Shortcut icon
+  shortcutIcon = {$site_package.favicon}
+
+  # Include CSS
+  includeCSS {
+    site_package_10 = EXT:sitepackage/Resources/Public/Css/vendor.css
+    site_package_20 = EXT:sitepackage/Resources/Public/Css/styles.css
+    site_package_30 = EXT:sitepackage/Resources/Public/Css/custom.css
+  }
+
+  includeJSFooter {
+    site_package_10 = EXT:sitepackage/Resources/Public/Js/vendor.js
+    site_package_20 = EXT:sitepackage/Resources/Public/Js/main.js
+  }
+
+  headerData.1010 = TEXT
+  headerData.1010.value (
+
+  <!-- Some Header Stuff defined in page.typoscript -->
+
+  )
+
+  #/-----------------------------------\
+  # Mapping backend grids
+  #\-----------------------------------/
+
+  10 = FLUIDTEMPLATE
+  10 {
+    layoutRootPath = EXT:sitepackage/Resources/Private/Layouts/Page/
+    partialRootPath = EXT:sitepackage/Resources/Private/Partials/Page/
+
+    variables {
+      layout = TEXT
+      layout.data = levelfield:-1,backend_layout_next_level,slide
+      layout.override.field = backend_layout
+    }
+
+    #/-----------------------------------\
+    # Template switch
+    #\-----------------------------------/
+
+    file.stdWrap.cObject = CASE
+    file.stdWrap.cObject {
+      # slide the template
+      key.data = levelfield:-1, backend_layout_next_level, slide
+      key.override.field = backend_layout
+
+      # template file for default
+      default = TEXT
+      default.value = EXT:sitepackage/Resources/Private/Templates/Page/Default.html
+
+      pagets__home = TEXT
+      pagets__home.value = EXT:sitepackage/Resources/Private/Templates/Page/Home.html
+
+    }
+
+    #/-----------------------------------\
+    # Get Content
+    #\-----------------------------------/
+
+    variables {
+      backendlayout = TEXT
+      backendlayout.data = levelfield:-2,backend_layout_next_level,slide
+      backendlayout.override.field = backend_layout
+
+      contentMain < styles.content.get
+      contentMain.select.where = colPos = 0
+
+      contentLeft < styles.content.get
+      contentLeft.select.where = colPos = 1
+
+      contentRight < styles.content.get
+      contentRight.select.where = colPos = 2
+
+      content3 < styles.content.get
+      content3.select.where = colPos = 3
+
+      content4 < styles.content.get
+      content4.select.where = colPos = 4
+    }
+  }
+}

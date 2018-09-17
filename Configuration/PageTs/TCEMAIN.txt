@@ -1,0 +1,12 @@
+#/-----------------------------------\
+# TCEMain
+#\-----------------------------------/
+
+TCEMAIN {
+    permissions {
+        groupid = 1
+        permissions.group = 1
+    }
+    translateToHidden = 1
+
+}

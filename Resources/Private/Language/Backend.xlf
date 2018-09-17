@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-02-01T10:57:57Z" >
+		<header/>
+		<body>
+
+			<trans-unit id="field.header_position">
+				<source>Alignment</source>
+			</trans-unit>
+			<trans-unit id="field.header_position.default">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="field.header_position.center">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="field.header_position.left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="field.header_position.right">
+				<source>Right</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

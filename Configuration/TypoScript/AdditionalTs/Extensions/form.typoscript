@@ -1,0 +1,25 @@
+#/-----------------------------------\
+# Form
+# - Plugin
+# - Module
+#\-----------------------------------/
+
+#/-----------------------------------\
+# Form Plugin
+#\-----------------------------------/
+
+plugin.tx_form {
+  settings {
+    yamlConfigurations.100 = EXT:sitepackage/Configuration/Form/FormSetup.yaml
+  }
+}
+
+#/-----------------------------------\
+# Form Module
+#\-----------------------------------/
+
+module.tx_form {
+  settings {
+    yamlConfigurations.100 = EXT:sitepackage/Configuration/Form/FormSetup.yaml
+  }
+}

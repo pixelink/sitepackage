@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-02-01T10:57:57Z"
+		  product-name="t3p_core">
+		<header/>
+		<body>
+
+			<trans-unit id="fluidcontent_core.10">
+				<source>Customers</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

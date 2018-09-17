@@ -1,0 +1,96 @@
+#/-----------------------------------\
+# Backend Layouts
+# - language and flag for modules
+# - backend layouts
+# -- default
+# -- home
+# -- subpage column right
+#\-----------------------------------/
+
+#/-----------------------------------\
+# flags and language
+#\-----------------------------------/
+
+mod.SHARED {
+    defaultLanguageFlag = de
+    defaultLanguageLabel = Deutsch
+}
+
+#/-----------------------------------\
+# Backend layouts
+#\-----------------------------------/
+
+mod {
+    web_layout {
+        BackendLayouts {
+            #/-----------------------------------\
+            #  Default
+            #\-----------------------------------/
+
+            default {
+                title = Default
+                description = The default template for website
+                icon = EXT:sitepackage/Resources/Public/Images/BackendLayouts/right-sidebar.png
+
+                config {
+                    backend_layout {
+                        colCount = 2
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Content
+                                        colPos = 0
+                                    }
+
+                                    2 {
+                                        name = Rechte Spalte
+                                        colPos = 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #/-----------------------------------\
+            # Home Page
+            #\-----------------------------------/
+
+            home {
+                title = Home
+                description = The home template for website
+                icon = EXT:sitepackage/Resources/Public/Images/BackendLayouts/home.png
+
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 2
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Stage
+                                        colPos = 1
+                                    }
+                                }
+                            }
+
+                            2 {
+                                columns {
+                                    1 {
+                                        name = Content
+                                        colPos = 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
