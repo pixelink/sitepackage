@@ -19,33 +19,34 @@ plugin.tx_sitepackage {
 # Include Basic Setup
 #\-----------------------------------/
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage/Configuration/TypoScript/AdditionalTs/config.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage/Configuration/TypoScript/AdditionalTs/page.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage/Configuration/TypoScript/AdditionalTs/tt_content.typoscript">
+@import 'EXT:sitepackage/Configuration/TypoScript/AdditionalTs/config.typoscript'
+@import 'EXT:sitepackage/Configuration/TypoScript/AdditionalTs/page.typoscript'
+@import 'EXT:sitepackage/Configuration/TypoScript/AdditionalTs/tt_content.typoscript'
 
 
 #/-----------------------------------\
 # Include Menus
 #\-----------------------------------/
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Menu/mainMenu.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Menu/socialMediaMenu.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Menu/footerMenu.typoscript">
+@import 'EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Menu/mainMenu.typoscript'
+@import 'EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Menu/socialMediaMenu.typoscript'
+@import 'EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Menu/footerMenu.typoscript'
 
 #/-----------------------------------\
 # Include Libs
 #\-----------------------------------/
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Lib/logo.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Lib/copyright.typoscript">
+@import 'EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Lib/logo.typoscript'
+@import 'EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Lib/copyright.typoscript'
 
 #/-----------------------------------\
 # language
 #\-----------------------------------/
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Languages/language.typoscript">
+@import 'EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Languages/language.typoscript'
 
 #/-----------------------------------\
 # Extensions
 #\-----------------------------------/
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Extensions/gridelements.typoscript">
+@import 'EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Extensions/gridelements.typoscript'
+@import 'EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Extensions/form.typoscript'
