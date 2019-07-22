@@ -1,7 +1,7 @@
 {
 	"name": "pixelink/sitepackage",
 	"type": "typo3-cms-extension",
-	"version": "1.0.1",
+	"version": "9.5.0",
 	"description": "Sitepack Skeletton",
 	"homepage": "https://www.pixel-ink.de",
 	"keywords": ["TYPO3 Boilerplate", "Sitepackage", "Skeletton", "Pixel Ink", "TYPO3"],
@@ -13,7 +13,9 @@
 		}
 	],
 	"require": {
-		"typo3/cms-core": "^8.7"
+		"typo3/cms-core": "^9.5",
+		"gridelementsteam/gridelements": "^9",
+		"mask/mask": "^4"
 	},
 	"autoload": {
 		"psr-4": {
