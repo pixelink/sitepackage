@@ -7,13 +7,10 @@ if (!defined('TYPO3_MODE')) {
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
     '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage/Configuration/PageTs/Page.txt">'
 );
-
 // Configure the RTE
 $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['default'] = 'EXT:sitepackage/Configuration/RTE/Default.yaml';
 
-
 // Install tool settings
-$GLOBALS['TYPO3_CONF_VARS']['BE']['loginSecurityLevel']  = 'rsa';
 $GLOBALS['TYPO3_CONF_VARS']['BE']['disable_exec_function'] = '1';
 $GLOBALS['TYPO3_CONF_VARS']['BE']['fileCreateMask'] = '0755';
 $GLOBALS['TYPO3_CONF_VARS']['BE']['folderCreateMask'] = '0755';
@@ -21,7 +18,6 @@ $GLOBALS['TYPO3_CONF_VARS']['BE']['forceCharset'] = 'utf-8';
 $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'] = '100400';
 $GLOBALS['TYPO3_CONF_VARS']['BE']['versionNumberInFilename'] = '0';
 
-$GLOBALS['TYPO3_CONF_VARS']['FE']['loginSecurityLevel']  = 'rsa';
 $GLOBALS['TYPO3_CONF_VARS']['FE']['disableNoCacheParameter'] = '1';
 $GLOBALS['TYPO3_CONF_VARS']['FE']['pageNotFound_handling'] = '/404-error/';
 $GLOBALS['TYPO3_CONF_VARS']['FE']['pageNotFound_handling_statheader'] = 'HTTP/1.0 404 Not Found';
@@ -48,6 +44,7 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['setDBinit'] = 'SET NAMES \'utf8\';';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['sqlDebug'] = '0';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['UTF8filesystem'] = '0';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['systemLocale'] = 'de_DE.UTF-8';
+
 
 // Navtitle im Pagetree
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('options.pageTree.showNavTitle = 1');

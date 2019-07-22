@@ -1,0 +1,17 @@
+# Breadcrumb Menü
+
+lib.breadcrumb = HMENU
+lib.breadcrumb {
+    excludeUidList = 2,5,6,7
+    special = rootline
+    special.range = 0|-1
+
+    1 = TMENU
+    1 {
+        wrap = <ul> | </ul>
+        NO.linkWrap =  <li class=""> | </li>
+        CUR = 1
+        CUR.linkWrap =  <li class="bc--active"> | </li>
+        CUR.doNotLinkIt = 1
+    }
+}

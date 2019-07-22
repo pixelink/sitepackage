@@ -81,18 +81,6 @@ TCEFORM {
                 addOwn = Add own in TCEFORM.txt
             }
         }
-
-
-        #/-----------------------------------\
-        # Bootstrap container row
-        #\-----------------------------------/
-        px_bootstrap_row {
-            addItems {
-                container = Links/Rechts begrenzt (Container)
-                fullwidth = Volle Breite (Container-Fluid)
-                row = Volle Breite (Row)
-            }
-        }
         # Remove content elements
         CType.removeItems = bullets
     }
