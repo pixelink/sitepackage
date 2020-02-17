@@ -60,6 +60,21 @@ TCEFORM {
             }
         }
 
+        px_bootstrap_row {
+            addItems {
+                container = Links/Rechts begrenzt (Container)
+                fullwidth = Volle Breite (Container-Fluid)
+                row = Volle Breite (Row)
+            }
+        }
+        px_header_class {
+            addItems {
+                0 = default
+                10 = Zentriert, unterstrichen
+                hl-big = hl-big
+            }
+        }
+
         #/-----------------------------------\
         # Layout
         #\-----------------------------------/

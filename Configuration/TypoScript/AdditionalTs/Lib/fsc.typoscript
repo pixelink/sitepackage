@@ -1,0 +1,13 @@
+lib.contentElement {
+  templateRootPaths {
+    200 = EXT:sitepackage/Resources/Private/Extensions/Fsc/Templates
+  }
+
+  partialRootPaths {
+    200 = EXT:sitepackage/Resources/Private/Extensions/Fsc/Partials
+  }
+
+  layoutRootPaths {
+    200 = EXT:sitepackage/Resources/Private/Extensions/Fsc/Layouts
+  }
+}

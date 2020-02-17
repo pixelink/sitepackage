@@ -37,6 +37,7 @@ plugin.tx_sitepackage {
 
 @import 'EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Lib/logo.typoscript'
 @import 'EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Lib/copyright.typoscript'
+@import 'EXT:sitepackage/Configuration/TypoScript/AdditionalTs/Lib/fsc.typoscript'
 
 #/-----------------------------------\
 # language
